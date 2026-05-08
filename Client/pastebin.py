@@ -1,7 +1,7 @@
 from websockets.sync.client import connect
 import yaml
 
-config= "config.yaml"
+config= "C:\Written code\Python-CMD-PasteBin\Client\config.yaml"
 
 with open(config, "r") as conf:
     config_data= yaml.safe_load(conf)

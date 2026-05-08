@@ -22,7 +22,12 @@ async def hello(websocket):
     print(len(messages))
     chat_length = await websocket.recv()
 
-    await websocket.send(messages[-int(chat_length): ])
+    if len(messages) > 0:
+        print(messages, "empty")
+        await websocket.send(messages[-int(chat_length): ])
+    else:
+        print(messages, "notempty")
+        await websocket.send("no chats yet!\n")
 
     message= await websocket.recv()
     messages.append(message)

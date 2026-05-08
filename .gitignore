@@ -1,4 +1,4 @@
 .vscode
-# Server/config.yaml
-# Server/chat_logs.txt
-# Client/config.yaml
+Server/config.yaml
+Server/chat_logs.txt
+Client/config.yaml
